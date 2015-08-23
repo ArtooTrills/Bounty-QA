@@ -1,0 +1,105 @@
+package Practice;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+        
+
+public class Zomato_Location3 {
+    
+    public static boolean Search_Location_001() {
+        
+        boolean result=true;
+        
+        WebDriver d = new FirefoxDriver();
+        
+        d.get("https://www.zomato.com/");
+        
+        d.manage().window().maximize();
+        
+        String actual = d.findElement(By.xpath(".//*[@id='location_pretext']/div[1]/span[2]")).getText();
+       
+        String expected = "Delhi NC";
+        
+        try{
+            Assert.assertEquals(actual, expected);
+        }catch (Throwable t) {
+            result=false;
+        }           
+       
+        d.close();
+        
+        return result;
+        
+        
+    }
+    
+    public static boolean Interaction_Location_004() {
+        
+        boolean result = true;
+        
+        WebDriver d = new FirefoxDriver();
+        
+        String expected = "Noida";
+        
+        d.get("https://www.zomato.com/");
+        
+        d.manage().window().maximize();
+        
+        d.findElement(By.xpath(".//*[@id='location_pretext']/div[1]")).click();
+        
+        d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        
+        d.findElement(By.xpath(".//*[@id='location_input']")).sendKeys(expected);
+        
+        d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        
+        Actions b = new Actions(d); 
+        b.sendKeys(Keys.COMMAND + "t");
+        //d.findElement(By.cssSelector("body")).sendKeys(Keys.COMMAND +"t");
+        d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        b.sendKeys(Keys.COMMAND +"\t");
+        //d.switchTo().window("newtab-window");
+        
+        //d.switchTo().window("Restaurants - Delhi NCR Restaurants, Restaurants in Delhi NCR | Zomato India");
+        
+        d.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        
+        String actual = d.findElement(By.xpath(".//*[@id='location_pretext']")).getText();
+        //System.out.println(actual);
+        
+        try{
+            Assert.assertEquals(actual, expected);
+        }catch (Throwable t) {
+            result=false;
+        }           
+       
+        d.close();
+        return result;
+    }
+    
+    
+    public static void main(String args[]) {
+        
+        //WebDriver d1= new FirefoxDriver();
+        
+        //d1.get("https://www.zomato.com/");
+        
+        //Search_Location_001: Location bar display
+        boolean result = Search_Location_001();
+        if(result==true){System.out.println("Search_Location_001 is Passed");}
+        else{System.out.println("Search_Location_001 is failed");}
+        
+        
+        //Interaction_Location_004
+        boolean result1 = Interaction_Location_004();
+        if(result1==true){System.out.println("Interaction_Location_004 is Passed");}
+        else{System.out.println("Interaction_Location_004 is failed");}
+        
+    }
+}

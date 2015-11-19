@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cleartrip_Artoo_Suite">
+  <test name="ClearTripFlightBookingTest">
+    <classes>
+      <class name="org.cleartrip.testmethods.ClearTripBookingTest">
+      <methods>
+      <include name="Artoo_ClearTrip_FlightBooking_OneWay_001"/>
+      <include name="Artoo_ClearTrip_FlightBooking_ErrorScenario_002"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

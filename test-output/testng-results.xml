@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="14003" started-at="2015-10-14T12:53:10Z" finished-at="2015-10-14T12:53:24Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="14003" started-at="2015-10-14T12:53:10Z" finished-at="2015-10-14T12:53:24Z">
+      <class name="org.framework.testmethods.googleSearchTest">
+        <test-method status="PASS" signature="screenshotCleanUp()[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624]" name="screenshotCleanUp" is-config="true" duration-ms="37" started-at="2015-10-14T05:53:10Z" finished-at="2015-10-14T05:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotCleanUp -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624]" name="beforeTest" is-config="true" duration-ms="7097" started-at="2015-10-14T05:53:10Z" finished-at="2015-10-14T05:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624]" name="setUp" is-config="true" duration-ms="6626" started-at="2015-10-14T05:53:17Z" finished-at="2015-10-14T05:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchAnotherText()[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624]" name="searchAnotherText" duration-ms="157" started-at="2015-10-14T05:53:24Z" finished-at="2015-10-14T05:53:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAnotherText -->
+        <test-method status="PASS" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624]" name="takeScreenshot" is-config="true" duration-ms="1" started-at="2015-10-14T05:53:24Z" finished-at="2015-10-14T05:53:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchAnotherText status=SUCCESS method=googleSearchTest.searchAnotherText()[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.framework.testmethods.googleSearchTest@5e3a8624]" name="tearDownClass" is-config="true" duration-ms="2453" started-at="2015-10-14T05:53:25Z" finished-at="2015-10-14T05:53:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.framework.testmethods.googleSearchTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

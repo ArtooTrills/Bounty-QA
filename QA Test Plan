@@ -1,0 +1,151 @@
+
+
+
+TEST PLAN for ZOMATO project
+
+
+
+
+
+
+
+
+
+
+
+1.	INTRODUCTION
+2.	OBJECTIVE
+3.	SCOPE
+4.	REFERENCES
+5.	TEST PROCESS
+6.	TEST STRATEGY
+7.	TEST ENVIRONMENT
+8.	TEST SCHEDULE
+9.	CONTROL PROCEDURE
+10.	ROLES AND RESPONSIBILITIES
+11.	DELIVERABLE
+12.	ENTRY CRITERIA
+13.	EXIT CRITERIA
+14.	RISK
+15.	ACRONYMS
+
+
+
+
+
+
+
+
+
+1.	INTRODUCTION
+According to the requirement from Artoo the test plan have been created to communicate the testing scope and approach for this project. This plan includes objective, scope, schedule, risk and approach and this document will be clear on what the test deliverables will be.
+2.	OBJECTIVE
+Objective of this test plan is to define various Testing strategies and testing tools used for complete Testing lifecycle of this project.
+3.	SCOPE
+This document specifies about the GUI testing in various platforms and also the requirement specified.
+3.1	Functions to be tested.
+-	Web app
+-	Mobile app
+-	API
+-	How to improve the UI/UX
+-	How the app fares when the connectivity is low
+4.	REFERENCES
+Test details provided by the client. Refer the specified location -
+https://github.com/ArtooTrills/Bounty-QA-Zomato
+5.	TEST PROCESS
+5.1	Understanding requirements
+-	Verify requirement specification document
+-	QA will prepare understanding document
+-	Check with immediate team for any queries (QA leads. DEV team)
+-	Raise query to the client
+-	Response will be sent by the client
+5.2	Test case preparation
+-	Prepare test cases based on the requirement
+-	Test cases will cover all the requirements specified
+5.3	Test matrix
+-	A Test matrix will be prepared which will map the test cases with the requirements.
+-	Test matrix will help in test coverage
+5.4	Review	
+-	Test cases and test matrix will be reviewed by Senior QA members and DEV team can also be involved in the review
+-	Reviewers will provide comments and suggestions for the test cases and test coverage
+-	Comments and suggestions should be reworked and added in the test cases
+-	Re-work and improvements will be reviewed and approved by the reviewers
+5.5	Test data Creation
+-	QA will prepare the test data based on the requirement
+5.6	Test Execution
+-	A Test matrix will be prepared which will map the test cases with the requirements.
+-	Test matrix will help in test coverage
+5.6.1	Defect logging and Reporting
+-	Will be done in JIRA or BUGZILLA
+5.6.2	Retesting and Regression Testing
+-	Retesting the fixed bugs will be part of new builds and once the final build is deployed few rounds of regression testing will be executed to ensure the correctness of the flow.
+6.	TEST STRATEGY
+Different types of testing which is performed for this project is mentioned below
+6.1	Testing Types
+-	Black box Testing
+-	GUI Testing
+-	Integration Testing
+-	Functional Testing
+-	System Testing
+-	Alpha Testing
+6.2	Testing Tools
+-	Google chrome browser on windows 7
+-	Mozilla Firefox Browser on windows 7
+-	App installation and testing on Andriod APP
+7.	TEST ENVIRONMENT
+-	ZOMATO Web app
+-	ZOMATO Mobile app
+-	ZOMATO API
+8.	TEST SCHEDULE
+-	Project planning/ Test planning
+-	Test design
+-	Test functionality completion
+-	Feature completion
+-	Regression testing
+-	Exit procedure documentation
+9.	CONTROL PROCEDURE
+9.1	Review
+-	Test cases review
+-	Requirement Traceability Matrix
+9.2	Bug Review
+-	To verify the critical bugs/ show stoppers at every test cycle
+9.3	Change Request (CR)
+-	Understanding the change request and verify whether it affects existing functionality
+-	Update the test cases based on the change request
+-	Retesting and regression will be done once the Change request is implemented
+10.	ROLES AND RESPONSIBILITIES
+Roles of QA is as follows
+-	Understanding the requirements
+-	Writing and executing the test cases
+-	Prepare Traceability matrix
+-	Review Test cases and Traceability matrix
+-	Defect reporting and tracking
+-	Regression testing and Defect retesting
+-	Bug Review
+11.	DELIVERABLE
+11.1	Test Design
+-	Test cases documentation for Functional test cases
+-	End to End testing
+11.2	Test Report
+-	Functional test coverage
+-	Criteria’s met (Entry and Exit)
+-	Test project
+-	Test cases documents
+12.	ENTRY CRITERIA
+-	Complete understanding of the requirement by QA
+-	Reports should reflect Functional test coverage
+-	Review of Test scenarios, Test Cases and Traceability matrix
+13.	EXIT CRITERIA
+-	No defects over a period of time
+-	All High severity/ High Priority test cases are resolved and tested.
+-	Deliverables are ready. 
+14.	RISK
+-	Delay in delivery of test items (features/ end to end flow) may affect the final schedule
+-	Understanding requirements
+-	Domain and Project knowledge of the QA
+15.	ACRONYMS
+-	GUI: Graphical User Interface
+-	QA: Quality Assurance
+-	DEV: Development Team
+-	UI/UX: User Interface/ User Experience
+-	CR: Change Request	

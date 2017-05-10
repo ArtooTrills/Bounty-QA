@@ -1,0 +1,18 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Zomato_location1 {
+    
+    public static void main(String args[]) {
+        
+        WebDriver d1= new FirefoxDriver();
+        
+        d1.get("https://www.zomato.com/");
+        
+        d1.findElement(By.xpath(".//*[@id='location_pretext']/div[1]")).click();
+        
+        d1.findElement(By.xpath(".//*[@id='location_input']")).sendKeys("Noida");
+    
+    }
+}

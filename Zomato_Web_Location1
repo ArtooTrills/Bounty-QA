@@ -1,0 +1,27 @@
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+        
+
+public class Zomato_location2 {
+    public static void main(String args[]) {
+        
+        WebDriver d1= new FirefoxDriver();
+        
+        d1.get("https://www.zomato.com/");
+        
+        d1.manage().window().maximize();
+        
+        d1.findElement(By.xpath(".//*[@id='location_pretext']/div[1]")).click();
+        
+        d1.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        
+        d1.findElement(By.xpath(".//*[@id='location_input']")).sendKeys("Noida");
+        
+        for (int i=1;i<=10;i++) {
+            System.out.println(d1.findElement(By.xpath(".//*[@id='location-suggestion-container']/li["+i+"]")).getText());
+
+        }        
+    }
+}

@@ -1,0 +1,51 @@
+<Monkey test, shell script for Android devices>
+#!/bin/bash
+./adb devices
+./adb shell
+"monkey -p com.goonjsoftwares.tapthehighestfree -v 10
+"
+
+<Artoo_AutoStability_001, Appium script for Android devices>
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+
+/**
+ *
+ * @author Lalit
+ */
+public class AppiumPractice {
+
+   
+    public static void main(String[] args) {
+      
+        try {
+            
+            AppiumDriver<WebElement> ad;
+            
+            DesiredCapabilities cap = new DesiredCapabilities();
+            cap.setCapability("deviceName", "acer-a1_713hd-JJWC5HKJGYQOLRD6");
+            cap.setCapability("platformVersion", "4.4.2");
+            cap.setCapability("platformName", "Android");
+            cap.setCapability("appPackage", "com.google.android.youtube");
+            cap.setCapability("appActivity", "com.google.android.youtube.HomeActivity");
+            
+            for(int i=0;i<10;i++) {
+            ad = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"),cap);
+            ad.quit();
+            } 
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(AppiumPractice.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+ 
+}    
+
